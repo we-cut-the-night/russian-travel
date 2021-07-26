@@ -1,0 +1,45 @@
+.page{
+  margin: 0;
+  padding: 0;
+  min-width: 1280px;
+  background-color: #2A2C2F;
+}
+
+.two-columns{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 48px;
+  border: 2px dashed red;
+}
+
+.header{
+  width: 100%;
+  border: 2px dashed red;
+}
+
+.header__logo{
+  background-image: url('../../images/header-logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 156px;
+  height: 52px;
+}
+
+.header__lang-link{
+  display: flex;
+}
+
+.header__main-illustrtation{
+  margin: 0 100px;
+  width: 984px;
+  height: 615px;
+  border: 2px dashed red;
+}
+
+.header__title{
+  margin: 0 auto;
+}
+
+.header__subtitle{
+  margin: 0 auto;
+}
