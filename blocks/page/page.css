@@ -1,20 +1,52 @@
+@font-face {
+  font-family: 'Inter-Thin';
+  font-style:  normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../../vendor/font/Inter-Thin.woff2) format("woff2"),
+       url(../../vendor/font/Inter-Thin.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../vendor/font/Inter-Regular.woff2) format("woff2"),
+       url(../../vendor/font/Inter-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  font-style:  normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../../vendor/font/Inter-Medium.woff2) format("woff2"),
+       url(../../vendor/font/Inter-Medium.woff) format("woff");
+}
+
 .page{
+  display: flex;
   margin: 0;
   padding: 0;
   min-width: 1280px;
   background-color: #2A2C2F;
+  color: #fff;
+  font-family: Inter-Regular, Arial, sans-serif;
 }
 
 .two-columns{
+  margin: 48px 48px 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
-  margin: 0 48px;
   border: 2px dashed red;
 }
 
+/* Блок Header */
+
 .header{
   width: 100%;
-  border: 2px dashed red;
 }
 
 .header__logo{
@@ -25,21 +57,63 @@
   height: 52px;
 }
 
-.header__lang-link{
+.header__links{
   display: flex;
+  list-style: none;
 }
 
-.header__main-illustrtation{
-  margin: 0 100px;
-  width: 984px;
-  height: 615px;
+.header__lang-link{
+  margin: 0 18px 0 0;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.header__lang-link:last-of-type{
+  margin: 0;
+}
+
+
+.header__title{
+  margin: 56px auto 0;
+  width: 720px;
+  min-height: 200px;
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 100px;
+  text-align: center;
   border: 2px dashed red;
 }
 
-.header__title{
-  margin: 0 auto;
+.header__subtitle{
+  margin: 32px auto 0;
+  padding: 0;
+  width: 640px;
+  min-height: 72px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  border: 2px dashed red;
 }
 
-.header__subtitle{
+.header__img-container{
   margin: 0 auto;
+  width: 984px;
+  border: 2px dashed red;
 }
+
+.header__main-illustrtation{
+  margin: 0;
+  width: 100%;
+}
+
+.header__caption{
+  width: 158px;
+  min-height: 14px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
