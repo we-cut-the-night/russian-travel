@@ -27,16 +27,20 @@
 
 .page{
   display: flex;
-  margin: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 0;
-  min-width: 1280px;
+  min-width: 1280px; /* убрать */
+  max-width: 1280px; /* убрать */
+  min-height: 100vh;
   background-color: #2A2C2F;
   color: #fff;
   font-family: Inter-Regular, Arial, sans-serif;
 }
 
 .two-columns{
-  margin: 48px 48px 0;
+  margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -46,10 +50,14 @@
 /* Блок Header */
 
 .header{
-  width: 100%;
+  margin: 0;
+  padding: 0 48px;
+  /* width: 100%; */
 }
 
 .header__logo{
+  margin: 28px 0 0;
+  padding: 0;
   background-image: url('../../images/header-logo.svg');
   background-size: contain;
   background-repeat: no-repeat;
@@ -59,6 +67,7 @@
 
 .header__links{
   display: flex;
+  margin: 46px 0 0;
   list-style: none;
 }
 
@@ -116,4 +125,93 @@
   font-weight: 400;
   line-height: 14px;
 }
+
+/* Блок Trains */
+.trains{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0;
+  padding: 0 48px;
+  border: 2px dashed red;
+}
+
+.trains__illustration{
+  margin: 0 auto;
+  width: 1184px;
+  height: 740px;
+}
+
+.trains__overlay{
+  position: absolute;
+  width: 1184px;
+  height: 740px;
+  background-color: #2A2C2F;
+  opacity: 0.3;
+  transition: opacity .4s;
+  border: 2px dashed red;
+  z-index: 1;
+
+}
+
+.trains__overlay:hover{
+  opacity: .8;
+}
+
+.trains__title{
+  position: absolute;
+  top: 245px;
+  right: 312px;
+  width: 560px;
+  z-index: 2;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+  text-align: center;
+}
+
+.trains__subtitle{
+  position: absolute;
+  z-index: 2;
+}
+
+
+
+/* Блок Footer */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 48px 24px;
+  border: 2px dashed red;
+}
+
+.footer__navigation{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  border: 2px dashed red;
+}
+
+.footer__links{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__link{
+  margin: 0 18px 0 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__link:last-of-type{
+  margin: 0;
+}
+
+.footer__copyright  {
+  border: 2px dashed red;
+}
+
 
