@@ -25,13 +25,12 @@
        url(../../vendor/font/Inter-Medium.woff) format("woff");
 }
 
-.page{
+.root{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0 auto;
   padding: 0;
-  min-width: 1280px; /* убрать */
   max-width: 1280px; /* убрать */
   min-height: 100vh;
   background-color: #2A2C2F;
@@ -40,23 +39,23 @@
 }
 
 .two-columns{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  border: 2px dashed red;
+  border: 2px dashed white;
 }
 
 /* Блок Header */
 
 .header{
   margin: 0;
-  padding: 0 48px;
-  /* width: 100%; */
+  padding: 0;
 }
 
 .header__logo{
-  margin: 28px 0 0;
+  margin: 28px 0 0 48px;
   padding: 0;
   background-image: url('../../images/header-logo.svg');
   background-size: contain;
@@ -67,22 +66,22 @@
 
 .header__links{
   display: flex;
-  margin: 46px 0 0;
+  margin: 46px 48px 0 0;
+  padding: 0;
   list-style: none;
 }
 
 .header__lang-link{
-  margin: 0 18px 0 0;
+  margin: 0 0 0 18px;
   text-decoration: none;
   font-size: 24px;
   line-height: 28px;
   color: #fff;
 }
 
-.header__lang-link:last-of-type{
-  margin: 0;
+.header__lang-link_active{
+  text-decoration: underline;
 }
-
 
 .header__title{
   margin: 56px auto 0;
@@ -92,7 +91,7 @@
   font-weight: 900;
   line-height: 100px;
   text-align: center;
-  border: 2px dashed red;
+  border: 2px dashed white;
 }
 
 .header__subtitle{
@@ -104,26 +103,64 @@
   font-weight: 400;
   line-height: 36px;
   text-align: center;
-  border: 2px dashed red;
+  border: 2px dashed white;
 }
 
-.header__img-container{
-  margin: 0 auto;
+/* Блок Description */
+
+.description__container{
+  margin: 64px auto 0;
   width: 984px;
-  border: 2px dashed red;
+  border: 2px dashed white;
 }
 
-.header__main-illustrtation{
+.description__main-illustrtation{
   margin: 0;
   width: 100%;
 }
 
-.header__caption{
-  width: 158px;
-  min-height: 14px;
+.description__caption{
+  margin: 8px 0 0;
+  padding: 0;
+  /* width: 158px; */
   font-size: 10px;
   font-weight: 400;
   line-height: 14px;
+}
+
+.description__title{
+  margin: 114px 0 0;
+  padding: 0;
+}
+
+.description__text{
+  margin: 40px 0 0;
+  padding: 0;
+}
+
+.description__list{
+  margin: 33px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Блок Gallery */
+
+.gallery{
+  margin: 92px 48px 0;
+  display: flex;
+  border: 2px dashed white;
+}
+
+.gallery__container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 16px;
+}
+
+.gallery__item{
+  width: 284px;
 }
 
 /* Блок Trains */
@@ -132,38 +169,37 @@
   flex-direction: column;
   position: relative;
   margin: 0;
-  padding: 0 48px;
-  border: 2px dashed red;
+  padding: 0;
+  border: 2px dashed white;
 }
 
-.trains__illustration{
+.trains__background{
   margin: 0 auto;
   width: 1184px;
   height: 740px;
+  background-image: url('../../images/cover-trains.jpg');
+  background-size: contain;
 }
 
 .trains__overlay{
   position: absolute;
+  margin: 0 auto;
+  padding: 0;
   width: 1184px;
   height: 740px;
-  background-color: #2A2C2F;
-  opacity: 0.3;
-  transition: opacity .4s;
-  border: 2px dashed red;
-  z-index: 1;
-
+  background-color: #2a2c2f30;
+  transition: background-color .4s;
+  /* border: 2px dashed white; */
 }
 
 .trains__overlay:hover{
-  opacity: .8;
+  background-color: #2a2c2f80;
 }
 
 .trains__title{
-  position: absolute;
-  top: 245px;
-  right: 312px;
+  margin: 245px auto 0;
+  padding: 0;
   width: 560px;
-  z-index: 2;
   font-size: 72px;
   font-weight: 900;
   line-height: 76px;
@@ -171,8 +207,12 @@
 }
 
 .trains__subtitle{
-  position: absolute;
-  z-index: 2;
+  margin: 32px auto 0;
+  padding: 0;
+  width: 360px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
 }
 
 
@@ -181,15 +221,18 @@
 .footer{
   display: flex;
   justify-content: space-between;
-  padding: 0 48px 24px;
-  border: 2px dashed red;
+  margin: 0;
+  padding: 0;
+  border: 2px dashed white;
 }
 
 .footer__navigation{
+  margin: 92px 0 24px 48px;
+  padding: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  border: 2px dashed red;
+  /* border: 2px dashed white; */
 }
 
 .footer__links{
@@ -206,12 +249,10 @@
   text-decoration: none;
 }
 
-.footer__link:last-of-type{
-  margin: 0;
-}
-
 .footer__copyright  {
-  border: 2px dashed red;
+  margin: 94px 48px 24px 0;
+  padding: 0;
+  /* border: 2px dashed white; */
 }
 
 
