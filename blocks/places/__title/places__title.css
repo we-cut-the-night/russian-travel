@@ -1,0 +1,25 @@
+.places__title{
+  margin: 0;
+  width: 100%;
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 900;
+}
+
+/* От 768px */
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .places__title{
+    font-size: 42px;
+    line-height: 46px;
+  }
+}
+
+/* От 320px */
+@media (max-width: 767.99px) {
+  .places__title{
+    margin: 0 auto 0;
+    width: calc(100% - 16px * 2);
+    font-size: 32px;
+    line-height: 35px;
+  }
+}

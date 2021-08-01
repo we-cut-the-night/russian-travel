@@ -1,0 +1,19 @@
+.cover__subtitle{
+  margin: 32px auto 0;
+  padding: 0;
+  width: 360px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  z-index: 1;
+}
+
+/* От 320px */
+@media (max-width: 767.99px) {
+  .cover__subtitle{
+    margin: 16px auto 0;
+    width: 288px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

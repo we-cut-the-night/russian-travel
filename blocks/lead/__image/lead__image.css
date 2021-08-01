@@ -1,28 +1,25 @@
-.places{
-  margin: 92px auto 0;
-  padding: 0;
-  width: 76.9%;
+.lead__image{
+  margin: 64px 0 0;
+  width: 100%;
 }
 
 /* От 1024px */
 @media (min-width: 1024px) and (max-width: 1279.99px) {
-  .places{
-    width: 90.6%;
+  .lead__image{
+    margin: 56px 0 0;
   }
 }
 
 /* От 768px */
 @media (min-width: 768px) and (max-width: 1023.99px) {
-  .places{
-    margin: 88px auto 0;
-    width: 93.8%;
+  .lead__image{
+    margin: 56px 0 0;
   }
 }
 
 /* От 320px */
 @media (max-width: 767.99px) {
-  .places{
-    margin: 64px auto 0;
-    width: 100%;
+  .lead__image{
+    margin: 40px 0 0;
   }
 }

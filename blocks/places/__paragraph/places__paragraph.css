@@ -1,0 +1,33 @@
+.places__paragraph{
+  margin: 25px 0 0 0;
+  padding: 0;
+  width: 100%;
+  font-size: 18px;
+  line-height: 29.34px;
+}
+
+.places__paragraph:first-of-type{
+  margin: 0;
+}
+
+/* От 768px */
+@media (min-width: 768px) and (max-width: 1023.99px) {
+  .places__paragraph{
+    font-size: 16px;
+    line-height: 26.08px;
+  }
+}
+
+/* От 320px */
+@media (max-width: 767.99px) {
+  .places__paragraph{
+    margin: 25px auto 0;
+    width: calc(100% - 16px * 2);
+    font-size: 16px;
+    line-height: 26.08px;
+  }
+
+  .places__paragraph:first-of-type{
+    margin: 0 auto;
+  }
+}
