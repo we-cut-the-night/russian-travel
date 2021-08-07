@@ -6,7 +6,7 @@
 }
 
 /* От 320px */
-@media (max-width: 767.99px) {
+@media (max-width: 767.9px) {
   .footer__list-item{
     margin: 32px 0 0 0;
     font-size: 24px;

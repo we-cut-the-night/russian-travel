@@ -1,4 +1,4 @@
-.places__website{
+.places-item__website{
   margin: 0;
   padding: 0;
   width: 100%;
@@ -8,8 +8,8 @@
 }
 
 /* От 320px */
-@media (max-width: 767.99px) {
-  .places__website{
+@media (max-width: 767.9px) {
+  .places-item__website{
     margin: 0 auto 0;
     width: calc(100% - 16px * 2);
   }

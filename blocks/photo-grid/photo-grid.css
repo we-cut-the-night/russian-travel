@@ -9,7 +9,7 @@
 }
 
 /* От 1024px */
-@media (min-width: 1024px) and (max-width: 1279.99px) {
+@media (min-width: 1024px) and (max-width: 1279.9px) {
   .photo-grid{
     grid-template-columns: repeat(3, 1fr);
     gap: 14px;
@@ -17,7 +17,7 @@
 }
 
 /* От 768px */
-@media (min-width: 768px) and (max-width: 1023.99px) {
+@media (min-width: 768px) and (max-width: 1023.9px) {
   .photo-grid{
     margin: 88px auto 0;
     width: calc(100% - 24px * 2);
@@ -26,7 +26,7 @@
 }
 
 /* От 320px */
-@media (max-width: 767.99px) {
+@media (max-width: 767.9px) {
   .photo-grid{
     margin: 64px auto 0;
     width: calc(100% - 16px * 2);

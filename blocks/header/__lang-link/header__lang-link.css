@@ -8,11 +8,11 @@
 }
 
 .header__lang-link:hover{
-  opacity: .4;
+  opacity: .8;
 }
 
 /* От 320px */
-@media (max-width: 767.99px) {
+@media (max-width: 767.9px) {
   .header__lang-link{
     font-size: 18px;
     line-height: 20px;

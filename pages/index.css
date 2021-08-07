@@ -2,13 +2,14 @@
 @import url(../vendor/fonts.css);
 @import url(../blocks/root/root.css);
 @import url(../blocks/page/page.css);
+@import url(../blocks/content/content.css);
 
 /* Блок Header */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
 @import url(../blocks/header/__links/header__links.css);
 @import url(../blocks/header/__lang-link/header__lang-link.css);
-@import url(../blocks/header/__lang-link/_active/header__lang-link_active_y.css);
+@import url(../blocks/header/__lang-link/_active/header__lang-link_active.css);
 
 /* Блок Lead */
 @import url(../blocks/lead/lead.css);
@@ -22,6 +23,7 @@
 @import url(../blocks/intro/__title/intro__title.css);
 @import url(../blocks/intro/__text/intro__text.css);
 @import url(../blocks/intro/__list/intro__list.css);
+@import url(../blocks/intro/__span-normal/intro__span-normal.css);
 
 /* Блок Photo-grid */
 @import url(../blocks/photo-grid/photo-grid.css);
@@ -29,17 +31,20 @@
 
 /* Блок Places */
 @import url(../blocks/places/places.css);
-@import url(../blocks/places/__item/places__item.css);
-@import url(../blocks/places/__title/places__title.css);
-@import url(../blocks/places/__website/places__website.css);
-@import url(../blocks/places/__url-heading/places__url-heading.css);
-@import url(../blocks/places/__link/places__link.css);
-@import url(../blocks/places/__image/places__image.css);
-@import url(../blocks/places/__text/places__text.css);
-@import url(../blocks/places/__paragraph/places__paragraph.css);
+
+/* Блок Places-item */
+@import url(../blocks/places-item/places-item.css);
+@import url(../blocks/places-item/__title/places-item__title.css);
+@import url(../blocks/places-item/__website/places-item__website.css);
+@import url(../blocks/places-item/__url-heading/places-item__url-heading.css);
+@import url(../blocks/places-item/__link/places-item__link.css);
+@import url(../blocks/places-item/__image/places-item__image.css);
+@import url(../blocks/places-item/__text/places-item__text.css);
+@import url(../blocks/places-item/__paragraph/places-item__paragraph.css);
 
 /* Блок Cover */
 @import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__link/cover__link.css);
 @import url(../blocks/cover/__title/cover__title.css);
 @import url(../blocks/cover/__subtitle/cover__subtitle.css);
 

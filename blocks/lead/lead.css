@@ -3,26 +3,23 @@
   width: calc(100% - 148px * 2);
 }
 
-/* От 1024px */
-@media (min-width: 1024px) and (max-width: 1279.99px) {
+/* До 1280px */
+@media (max-width: 1279.9px) {
   .lead{
     margin: 48px auto 0;
+  }
+}
+
+/* От 1024px */
+@media (min-width: 1024px) and (max-width: 1279.9px) {
+  .lead{
     width: calc(100% - 48px * 2);
   }
 }
 
 /* От 768px */
-@media (min-width: 768px) and (max-width: 1023.99px) {
+@media (max-width: 1023.9px) {
   .lead{
-    margin: 48px auto 0;
-    width: 100%;
-  }
-}
-
-/* От 320px */
-@media (max-width: 767.99px) {
-  .lead{
-    margin: 48px auto 0;
     width: 100%;
   }
 }

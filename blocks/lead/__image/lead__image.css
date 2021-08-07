@@ -3,22 +3,15 @@
   width: 100%;
 }
 
-/* От 1024px */
-@media (min-width: 1024px) and (max-width: 1279.99px) {
-  .lead__image{
-    margin: 56px 0 0;
-  }
-}
-
 /* От 768px */
-@media (min-width: 768px) and (max-width: 1023.99px) {
+@media (min-width: 768px) and (max-width: 1279.9px) {
   .lead__image{
     margin: 56px 0 0;
   }
 }
 
 /* От 320px */
-@media (max-width: 767.99px) {
+@media (max-width: 767.9px) {
   .lead__image{
     margin: 40px 0 0;
   }

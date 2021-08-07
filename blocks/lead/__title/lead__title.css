@@ -1,7 +1,6 @@
 .lead__title{
   margin: 0 auto;
   max-width: 720px;
-  min-height: 200px;
   font-size: 96px;
   line-height: 100px;
   font-weight: 900;
@@ -9,13 +8,11 @@
 }
 
 /* От 320px */
-@media (max-width: 767.99px) {
+@media (max-width: 767.9px) {
   .lead__title{
     margin: 16px auto 0;
     max-width: 288px;
-    min-height: 88px;
     font-size: 40px;
     line-height: 44px;
-    font-weight: 900;
   }
 }

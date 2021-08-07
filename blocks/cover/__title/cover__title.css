@@ -10,21 +10,21 @@
 }
 
 /* От 1024px */
-@media (min-width: 1024px) and (max-width: 1279.99px) {
+@media (min-width: 1024px) and (max-width: 1279.9px) {
   .cover__title{
     margin: 195px auto 0;
   }
 }
 
 /* От 768px */
-@media (min-width: 768px) and (max-width: 1023.99px) {
+@media (min-width: 768px) and (max-width: 1023.9px) {
   .cover__title{
     margin: 115px auto 0;
   }
 }
 
 /* От 320px */
-@media (max-width: 767.99px) {
+@media (max-width: 767.9px) {
   .cover__title{
     margin: 33px auto 0;
     width: 288px;

@@ -2,7 +2,6 @@
   margin: 32px auto 0;
   padding: 0;
   max-width: 640px;
-  min-height: 72px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 400;
@@ -10,11 +9,10 @@
 }
 
 /* От 320px */
-@media (max-width: 767.99px) {
+@media (max-width: 767.9px) {
   .lead__subtitle{
     margin: 16px auto 0;
     max-width: 288px;
-    min-height: 40px;
     font-size: 16px;
     line-height: 20px;
   }

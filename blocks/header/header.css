@@ -8,14 +8,14 @@
 }
 
 /* От 768px */
-@media (min-width: 768px) and (max-width: 1023.99px) {
+@media (min-width: 768px) and (max-width: 1023.9px) {
   .header{
     width: calc(100% - 24px * 2);
   }
 }
 
 /* От 320px */
-@media (max-width: 767.99px) {
+@media (max-width: 767.9px) {
   .header{
     margin: 16px auto 0;
     width: calc(100% - 16px * 2);

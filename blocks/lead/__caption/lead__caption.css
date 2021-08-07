@@ -2,21 +2,22 @@
   margin: 8px 0 0;
   padding: 0;
   max-width: 158px;
-  min-height: 14px;
   font-size: 10px;
   line-height: 14px;
   font-weight: 400;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
 /* От 768px */
-@media (min-width: 768px) and (max-width: 1023.99px) {
+@media (min-width: 768px) and (max-width: 1023.9px) {
   .lead__caption{
     margin: 8px auto 0 24px;
   }
 }
 
 /* От 320px */
-@media (max-width: 767.99px) {
+@media (max-width: 767.9px) {
   .lead__caption{
     margin: 8px auto 0 16px;
   }
