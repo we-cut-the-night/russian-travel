@@ -12,9 +12,6 @@
 @media (max-width: 767.9px) {
   .header__logo{
     background-size: 142px;
-  }
-
-  .header__logo{
     width: 142px;
     height: 42px;
   }
